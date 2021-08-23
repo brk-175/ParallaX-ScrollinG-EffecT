@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fff;
+}
+#header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+#header .logo {
+    color:#094b65;
+    font-weight: 1000;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+#header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #094b65;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+#header a:hover,
+#header a.active
+{
+    background-color: #094b65;
+    color: #fff;
+}
+section {
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+section #text {
+    font-size: 10vw;
+    position: absolute;
+    color: #094b65;
+    text-align: center;
+    line-height: 0.60em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-41%);
+}
+section #text span {
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+section img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #094b65, transparent);
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+}
+#button {
+    text-decoration: none;
+    display: inline-block;
+    background: #fff;
+    padding: 8px 30px;
+    border-radius: 40px;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transform: translateY(100px);
+}
+#button:hover {
+    border: 2px solid rgb(184, 248, 131);
+    background-color: #90dcfa;
+    font-weight: 600;
+    color: #094b65;
+}
+#para {
+    padding: 100px;
+    position: relative;
+    background-color: #094b65;
+    color: #fff;
+    text-align: justify;
+}
+#para h2 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 900;
+}
